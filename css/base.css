@@ -101,6 +101,8 @@ overflow: auto;
 .cf:after {clear: both;visibility: hidden;display: block;}
 /* 图片在鼠标移上就放大--end */
 
+.list-inline>li {text-align:center;text-align:-webkit-center;text-align:-moz-center;text-align:-o-center;text-align:-ms-center;}
+
 section {
 background: linear-gradient(to bottom, #627d4d 0%,#1f3b08 100%);
  /* W3C */
@@ -219,9 +221,9 @@ overflow: hidden;}
 footer h2 {
 font-size: 46px;
 color: #fff;
-padding-top: 94px;
+padding-top: 34px;
 font-weight: 200;}
-.social-medias {margin-top: 80px;}
+.social-medias {margin-top: 90px;}
 .social-medias i {
 background: none repeat scroll 0 0 #3F3F40;
 border: 6px solid rgba(0, 0, 0, 0.2);
@@ -237,7 +239,7 @@ footer a {color: #F8F8F8;font-weight: bolder;opacity: 0.6;transition: all .3s ea
 footer a:hover {opacity: 1;color: #FFFFFF;}
 footer .inner-content {height: inherit;position: relative;top: 0;margin: 0 auto;float: none;}
 .footer-last {bottom: 0px;height: auto;position: absolute;}
-.footer-last .breadcrumb {background: none repeat scroll 0 0 rgba(0, 0, 0, 0);color: #FFFFFF;float: right;width: auto;}
+.footer-last .breadcrumb {background: none repeat scroll 0 0 rgba(0, 0, 0, 0);color: #FFFFFF;text-align: center; width: auto;}
 .footer-last .breadcrumb a {color: #FFFFFF;}
 .copy-right {margin: 10px 0 0;}
 .item-title + p {font-size: 10px;}
