@@ -96,7 +96,7 @@ overflow: auto;
 .gallery > div > img {width: 304px;transition: .1s transform;transform: translateZ(0);}
 .gallery > div:hover {z-index: 9999;}
 .gallery > div:hover > img {transform: scale(2, 2);transition: .3s transform;}
-.cf{zoom:1;}
+.cf{zoom:1;padding-right:0px;padding-left:0px;}
 .cf:before, .cf:after {content: "";line-height: 0;}
 .cf:after {clear: both;visibility: hidden;display: block;}
 /* 图片在鼠标移上就放大--end */
@@ -326,13 +326,13 @@ h3,.h3 {font-size: 20px;}
 footer h2 {font-size: 38px;}
 }
 @media(min-width:800px) and (max-width:830px) { 
-.navbar-collapse {width: 66% !important;}
+.navbar-collapse {width: 67% !important;}
 }
 @media(min-width:831px) and (max-width:860px) { 
 .navbar-collapse {width: 65% !important;}
 }
 @media(min-width:861px) and (max-width:920px) { 
-.navbar-collapse {width: 61% !important;}
+.navbar-collapse {width: 62% !important;}
 }
 @media(min-width:921px) and (max-width:950px) { 
 .navbar-collapse {width: 60% !important;}
@@ -372,6 +372,9 @@ section:not(#intro) {height: auto !important;}
 .col-lg-8.port-desc-wrap {color: #737373;float: left;font-size: 16px;width: 100%;}
 .port-desc-wrap p,.port-desc-wrap h3 {text-align: left;}
 .big-btn {padding: 10px 20px !important;}
+}
+@media(min-width: 610px) and (max-width: 767px) {
+.social-medias i {font-size: 20px;line-height: 32px;}
 }
 @media(max-width:767px) { /*大屏手机或者平板*/
 #intro {background-image: url("../images/banner_mobile.jpg");}
