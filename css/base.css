@@ -12,7 +12,7 @@ section {position: relative}
 .nav > li > a {font-weight: 600}
 .fixed-list {background: #F4F4F4;border-radius: 2px;box-shadow: 0 2px 2px rgba(142, 142, 142, 0.5);position: fixed;right: 12px;top: 12px;z-index: 100}
 .col-lg-8.port-desc-wrap {color: #737373;font-size: 16px}
-.copyrights{text-indent:-9999px;height:0;line-height:0;font-size:0;overflow:hidden}
+/*.copyrights{text-indent:-9999px;height:0;line-height:0;font-size:0;overflow:hidden} */
 .navbar-default {background: #FFFFFF;height: 100px;box-shadow: 0 2px 2px rgba(0, 0, 0, 0.12);} /*height: 65px;*/
 .navbar-default >div {height: inherit}
 .navbar-default .navbar-brand {height: inherit}
@@ -241,7 +241,7 @@ footer .inner-content {height: inherit;position: relative;top: 0;margin: 0 auto;
 .footer-last {bottom: 0px;height: auto;position: absolute;}
 .footer-last .breadcrumb {background: none repeat scroll 0 0 rgba(0, 0, 0, 0);color: #FFFFFF;text-align: center; width: auto;}
 .footer-last .breadcrumb a {color: #FFFFFF;}
-.copy-right {margin: 10px 0 0;}
+.copy-right{margin: 10px 0 0;}
 .item-title + p {font-size: 10px;}
 .navbar.ms-nav-anim {top: -100px;}
 .navbar {margin-top: 0px;}
