@@ -86,7 +86,7 @@ background-attachment: fixed;}
 .ss-style-triangles::after {bottom: -50px;z-index: 10;background: inherit;}
 .banner-main {height: 100%;position: relative;}
 .banner-main .ban-text-middle {bottom: 0;color: #FFFFFF;font-weight: bold;height: 251px;left: 0;
-margin: 4% auto 0px;position: absolute;right: 0;text-shadow: 0 2px 2px rgba(0, 0, 0, 0.37);top: 0;}
+margin: 2% auto 0px;position: absolute;right: 0;text-shadow: 0 2px 2px rgba(0, 0, 0, 0.37);top: 0;}
 .ban-btn {background: none repeat scroll 0 0 rgba(0, 0, 0, 0);border: 1px solid;border-radius: 0;color: #F17C2F;font-weight: 600;min-width: 115px;padding: 6px 12px;}
 .ban-text-middle > h1 {margin-bottom: 14px;}
 .ban-text-middle p {margin-bottom: 12px;padding: 12px;letter-spacing: 1px;font-size: 18px;line-height: 2;}
@@ -149,7 +149,7 @@ a:hover {text-decoration: none;}
 #idea .sec-head-main {color: #3f3f40;}
 .cntct-sec-main {background: #343434;background-repeat: repeat;background-size: auto auto !important;padding-bottom: 25px;transition: all 0s ease-in 0s;z-index: 6;} /*#2D2D2D #2c3e50*/
 .second {clear: both;display: inline-block;float: none;margin: auto;text-align: center;}
-.second {margin: auto;}
+.second {margin:auto auto 32px auto;}
 .flat-box {border-radius: 0px;}
 .top-space {margin-top: 10px;}
 .cntct-form-main textarea {min-height: 150px;resize: vertical;}
@@ -166,14 +166,14 @@ background-size: cover;-webkit-background-size: cover;-moz-background-size: cove
 background-repeat: no-repeat;background-image: url(../images/footer_bg.jpg);overflow: hidden;}
 footer h2 {font-size: 46px;color: #fff;padding-top: 34px;font-weight: 200;}
 footer h3 {color: #F17C2F;}
-footer a {color: #F8F8F8;font-weight: bolder;opacity: 0.6;transition: all .3s ease-in;-webkit-transition: all .3s ease-in;-moz-transition: all .3s ease-in;}
-footer a:hover {opacity: 1;color: #FFFFFF;}
+footer a {color: #F8F8F8;font-weight: bolder;-webkit-opacity:0.6;filter:alpha(opacity=60);-moz-opacity:0.6;opacity:0.6;transition:all .3s ease-in;-webkit-transition: all .3s ease-in;-moz-transition: all .3s ease-in;}
+footer a:hover {-webkit-opacity:1;filter:alpha(opacity=100);-moz-opacity:1;opacity:1;color:#FFFFFF;}
 .social-medias {margin-top: 90px;}
 .social-medias i {background: none repeat scroll 0 0 #3F3F40;
 border: 6px solid rgba(0, 0, 0, 0.2);border-radius: 50%;
 display: block;font-size: 30px;height: 70px;line-height: 58px;
-margin: 16px;width: 70px;opacity: 0.6;}
-.social-medias i:hover{opacity: 1;}
+margin: 16px;width: 70px;-webkit-opacity:0.6;}
+.social-medias i:hover{-webkit-opacity:1;}
 footer .inner-content {height: inherit;position: relative;top: 0;margin: 0 auto;float: none;}
 .footer-last {bottom: 0px;height: auto;position: absolute;}
 .footer-last .breadcrumb {background: none repeat scroll 0 0 rgba(0, 0, 0, 0);color: #FFFFFF;text-align: center; width: auto;}
@@ -262,6 +262,10 @@ h3,.h3 {font-size: 20px;}
 .size {font-size: 16px;}
 footer h2 {font-size: 38px;}
 }
+@media(min-width:981px){
+.ban-text-middle h1 {color:#000;}
+.ban-text-middle p {color:#000;}
+}
 @media(min-width:800px) and (max-width:830px) { 
 .navbar-collapse {width: 67% !important;}
 }
@@ -277,7 +281,7 @@ footer h2 {font-size: 38px;}
 @media(min-width:951px) and (max-width:980px) { 
 .navbar-collapse {width: 56% !important;}
 }
-@media(min-width:767px) and (max-width:980px) { /*平板*/
+@media(min-width:767px) and (max-width:980px) { /*平板*/	
 .help-size{width: 20%;}
 .info-margin{margin: -5% 0;}
 .close-size{font-size: 2em;}
@@ -328,7 +332,7 @@ section:not(#intro) {height: auto !important;}
 .client-logo-main .col-lg-3 {height: 100px;}
 .ms-logo {float: left;}
 .toggle-big-left {float: right;}
-.ban-text-middle h1 {font-size: 24px;margin-bottom: 12px;margin-top: 40px;}
+.ban-text-middle h1 {font-size:24px;margin-bottom:12px;margin-top:40px;color:#FFF;}
 .services-table .col-lg-4 p {color: #818181;font-size: 12px;}
 .services-table .row > div {width: 100%;padding:0px;}
 .services-table .col-lg-4 h4 {color: #3F3F40;font-size: 18px;}
@@ -342,7 +346,7 @@ transition: all .3s ease-in;-webkit-transition: all .3s ease-in;-moz-transition:
 transform: translateX(0px);-moz-transform: translateX(0px);-webkit-transform: translateX(0px);
 }
 .navbar-default.visible .navbar-ex1-collapse {transform: translateX(200px);-moz-transform: translateX(200px);-webkit-transform: translateX(200px);}
-.ban-text-middle p {margin-bottom: 6px;}
+.ban-text-middle p {margin-bottom: 6px;color:#FFF}
 .navbar-default .navbar-toggle:hover, .navbar-default .navbar-toggle:focus {background: none;}
 .navbar-default .navbar-toggle {border-width: 0px;margin-top: 24px;}
 .navbar-default .navbar-nav > li > a {height: auto;margin: 0;padding: 12px;width: 100%;}
