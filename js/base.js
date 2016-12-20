@@ -25,7 +25,7 @@ CalcMeasure();
  */
 function ShowDiv(show_div,bg_div){
 document.getElementById(show_div).style.display='block';
-document.getElementById(bg_div).style.display='block' ;
+document.getElementById(bg_div).style.display='block';
 $("body").height($(window).height()).css({  
   "overflow-y": "hidden"  						  //½ûÖ¹´¥Ãþ»¬¶¯£¬¹ö¶¯Ìõ
 });
