@@ -1,635 +1,564 @@
 <!DOCTYPE html>
 <html lang="zh-CN">
-   <head>
-      <meta charset="utf-8">
-      <meta http-equiv="X-UA-Compatible" content="IE=edge">
-      <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <meta name="keywords" content="亚历山达,亚历山达雪糕,亚历山达冰淇淋,Alexander's,Alexanders,alexanders,alexander's,冰淇淋,冰棒,冰棍">
-      <meta name="description" content="每一口的喜悦，从亚历山达开始。亚历山达坚信，每一位消费者都拥有吃到安全、放心食品的权利，消费者不应每天为食品安全而提心吊胆。亚历山达绝对不添加任何人造香精、人造色素等雪糕制作过程中不必要的添加剂。亚历山达雪糕的味道、颜色都是由天然的原料直接得来。">
-      <meta name="author" content="Alexander's --Mr.Jiang">
-      <meta name="baidu-site-verification" content="4EQtzdLjOd" />
-      <meta name="baidu-site-verification" content="NAQPvYKYdM" />
-      <link rel="icon" type="image/png" href="images/favicon.png" />
-      <title>Alexander's</title>
-      <!-- Bootstrap core CSS -->
-<!--  <link href='../../../fonts.useso.com/css@family=Open+Sans_3A300italic,400italic,600italic,700italic,400,300,600,700&subset=latin,cyrillic-ext,greek-ext,vietnamese,latin-ext' rel='stylesheet' type='text/css'> -->
-      <link type="text/css" href="css/bootstrap.min.css" rel="stylesheet"/>
-      <link type="text/css" href="css/font-awesome.min.css" rel="stylesheet"/>
-      <link type="text/css" href="css/component.css" rel="stylesheet" />
-      <link type="text/css" href="css/base.css" rel="stylesheet"/>
-      <link type="text/css" href="source/jquery.fancybox.css?v=2.1.2" rel="stylesheet" media="screen" />
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <meta http-equiv="Cache-Control" content="no-siteapp" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+    <meta name="keywords" content="亚历山达，亚历山达雪糕，亚历山达冰淇淋，Alexanders，Alexander's，alexanders，alexander's，冰淇淋，冰棒，冰棍，雪糕">
+    <meta name="description" content="每一口的喜悦，从亚历山达开始。亚历山达绝不添加任何人造香精、人造色素等不必要的添加剂。亚历山达冰淇淋的味道、颜色都是由天然的原料直接得来。">
+    <meta name="author" content="Alexander's --Mr.JiangXinyu">
+    <!-- uc强制竖屏 -->
+    <meta name="screen-orientation" content="portrait">
+    <!-- QQ强制竖屏 -->
+    <meta name="x5-orientation" content="portrait">
 
-      <script src="js/modernizr.custom.js"></script>
+    <link type="image/png" rel="icon" href="images/favicon.png" />
+    <title>亚历山达冰淇淋</title>
+    <link type="text/css" href="css/bootstrap.min.css" rel="stylesheet"/>
+    <link type="text/css" href="css/font-awesome.min.css" rel="stylesheet"/>
+    <link type="text/css" href="css/component.css" rel="stylesheet" />
+    <link type="text/css" href="css/base.css" rel="stylesheet"/>
+    <link type="text/css" rel="stylesheet"  href="source/jquery.fancybox.css?v=2.1.2" media="screen" />
 
-      <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
-      <!--[if lt IE 9]>
-      <script src="js/html5shiv.js"></script>
-      <script src="js/respond.min.js"></script>
-      <![endif]-->
-   </head>
+    <script src="js/modernizr.custom.js"></script>
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+    <script src="js/html5shiv.js"></script>
+    <script src="js/respond.min.js"></script>
+    <![endif]-->
+</head>
 <body>
-	   <!-- 页面等待 -->
-      <div class="cover-all cover-body">
-         <div class="loading-place">
-            <div class="windows8">
-               <img alt="loading" src="images/loading.gif"/>
-            </div>
-            <div>
-               <p class="load-text">稍等,稍等,我们即将为你展现各种精彩^_^...</p>
-            </div>
-         </div>
-      </div>
-
-     <!-- 隐藏弹出层 -->
-     <div id="fade" class="black_overlay container-fluid">
-	  </div>
-     
-     <div style="width:100%;height: 100%;position:absolute;">
-	  <div id="MyDiv" class="white_content container-fluid content_size">
-	 	<div class="mydiv_close">
-	 		<i class="fa fa-close close-size" style="color:black;" onclick="CloseDiv('MyDiv','fade')"></i>
-		</div>
-	 	<div class="cover">
-		  <div class="container-fluid cover-size" >
-			<img src="images/two-bar-codes.jpg" style="max-width:100%;max-height:100%; margin:auto;" alt="使用微信扫一扫功能，关注我们" title="使用微信扫一扫功能，关注我们" />
-		 	<p class="black p1_size"> 喜 悦 · 每 一 口 </p>
-         <p class="black p2_size">A Delight in Every Bite</p>
-		  </div>
-
+<!-- 页面等待 -->
+<div class="cover-all cover-body">
+    <div class="loading-place">
+        <div class="windows8">
+            <img alt="loading" src="images/loading.gif"/>
         </div>
-          <div class="info-margin">
-         	<p class="black size" style="text-align:center;">请使用微信“扫一扫”功能扫描</p>
-         	<p class="black size" style="text-align:center;">关注微信号,有惊喜哟！</p>
-         	<p class="lead">
-          </div>
-	  </div>
-     </div>
+        <div>
+            <p class="load-text">请您稍等,我们即将为您展现各种精彩^_^...</p>
+        </div>
+    </div>
+</div>
 
-      <!-- ======固定导航条====== -->
-      <header>
-         <nav id="headNav" class="navbar navbar-default ms-nav-anim navbar-fixed-top" role="navigation">
-            <!-- 头部固定导航切换，才能在移动设备上更好的查看 -->
-            <div class="navbar-header">
-               <button type="button" class="navbar-toggle toggle-big-left">
-               <span class="sr-only">导航切换</span>
-               <span class="icon-bar"></span>
-               <span class="icon-bar"></span>
-               <span class="icon-bar"></span>
-               </button>
-               <a class="navbar-brand ms-logo">
-               <img alt="深圳亚历山达食品有限公司" title="深圳亚历山达食品有限公司" class="img-responsive" src="images/logo4.png">
-               </a>
+<div id="content">
+    <!-- 隐藏弹出层 -->
+    <div id="fade" class="black_overlay container-fluid"></div>
+    <div style="width:100%;height: 100%;position:absolute;">
+      <div id="MyDiv" class="white_content container-fluid content_size">
+        <div class="mydiv_close">
+          <i class="fa fa-close close-size" style="color:black;" onclick="CloseDiv('MyDiv','fade')"></i>
+        </div>
+        <div class="cover">
+          <div class="container-fluid cover-size" >
+            <img src="images/two-bar-codes.jpg" style="max-width:100%;max-height:100%; margin:auto;" />
+            <p class="black p1_size"> 喜 悦 · 每 一 口 </p>
+            <p class="black p2_size">A Delight in Every Bite</p>
+          </div>
+        </div>
+
+            <div class="info-margin">
+                <p class="black size" style="text-align:center;">请使用微信“扫一扫”功能扫描</p>
+                <p class="black size" style="text-align:center;">关注微信号,有惊喜哟！</p>
+                <p class="lead">
             </div>
+        </div>
+    </div>
+
+    <!-- ======固定导航条====== -->
+    <header>
+        <nav id="headNav" class="navbar navbar-default navbar-fixed-top" role="navigation">
+            <!-- 头部固定导航切换，才能在移动设备上更好的查看 -->
+            <ul class="navbar-header" style="padding: 0;">
+                <li style="display: inline-block;float: left;">
+                    <button type="button" class="navbar-toggle toggle-big-left" style="margin-right: 0;">
+                        <span class="sr-only">导航切换</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                </li>
+                <li style="display: inline-block;text-align: center;height: 65px;">
+                    <a class="navbar-brand ms-logo">
+                    <img alt="Alexander's logo" title="Alexander's" class="img-responsive" src="images/logo4.png">
+                    </a>
+                </li>
+            </ul>
             <!-- ========头部导航======== -->
-            <div id="navbar-collapse" class="collapse navbar-collapse ms-anim-nav-bar navbar-ex1-collapse pull-right">
-               <ul id="nav" class="nav navbar-nav">
-                  <li class="active"><a href="#intro"><i class="fa fa-home"></i>主页</a></li>
-                  <li><a id="servicesTrigg" href="#idea"><i class="fa fa-th-list"></i>品牌理念</a></li>
-                  <li><a href="#story"><i class="fa fa-book"></i>品牌故事</a></li>
-                  <li><a href="#store"><i class="fa fa-arrow-down"></i>线下体验</a></li>
-                  <li><a href="#contact"><i class="fa fa-comments-o"></i>联系我们</a></li>
-               </ul>
+            <div id="navbar-collapse" style="overflow-y: auto;" class="collapse navbar-collapse ms-anim-nav-bar navbar-ex1-collapse pull-right">
+                <ul id="nav" class="nav navbar-nav ">
+                    <li class="active"><a href="#intro"><i class=" fa fa-home"></i><span class="nav-font">官网主页</span></a></li>
+                    <li><a id="servicesTrigg" href="#idea"><i class="fa fa-th-list"></i><span class="nav-font">品牌理念</span></a></li>
+                    <li><a href="#story"><i class="fa fa-book"></i><span class="nav-font">品牌故事</span></a></li>
+                    <li class="online"><a href="#online"><i class="fa tamll-icon" style="background:url(images/tmall-icon.png) no-repeat;"></i><span class="nav-font">线上购买</span></a></li>
+                    <li><a href="#store"><i class="fa fa-arrow-down"></i><span class="nav-font">线下体验</span></a></li>
+                    <li class="brandHistory"><a href="<{:U('brandHistory')}>" target="_blank"><i class="fa fa-info-circle"></i><span class="nav-font">企业简介</span></a></li>
+                    <li><a href="#contact"><i class="fa fa-comments-o"></i><span class="nav-font">联系我们</span></a></li>
+                </ul>
             </div>
             <!-- 导航条结束 -->
-         </nav>
-      </header>
-      <!--================================================模块分界线==================================================-->
-      <!-- ======主容器====== -->
-      <!-- 主页 -->
+        </nav>
+    </header>
+    <!--================================================模块分界线==================================================-->
+    <!-- ======主容器====== -->
+    <!-- 主页 -->
       <div id="cbp-so-scroller" class="cbp-so-scroller cbp-scroller-main container-fluid">
-         <section id="intro" class="cbp-so-section text-center ss-style-triangles">
+         <section id="intro" class="cbp-so-section text-center ss-style-triangles topbarPadding">
             <div class="container-fluid text-center banner-main">
-               <div class="ban-text-middle">
-                  <a class="navbar-brand ms-logo second mobile-bg">
-                  <img id="logo" alt="Alexander's" title="Alexander's" class="img-responsive mobile-bg" src="images/logo3.png">
+            <a href="https://www.alexanders.cn/ShopPc/index.html" target="_blank" style="cursor: pointer;" title="点击进入购买" alt="点击进入购买">
+                <img class="img-responsive" src="images/banner.jpg">
+            </a>
+<!--               <div class="ban-text-middle">
+                  <a class="navbar-brand ms-logo second">
+                  <img alt="Alexander's logo" title="Alexander's" class="img-responsive" src="images/logo.png">
                   </a>
                   <h1>每一口的喜悦，从亚历山达开始。</h1>
-                  <p>国内高端冰淇淋O2O（线上到线下）品牌，通过优质食材创造好玩有趣的冰淇淋。</p>
-                  <button id="wechat" class="btn ban-btn" onclick="ShowDiv('MyDiv','fade')">关注我们</button>
-               </div>
+                  <p>ALEXANDER'S —— 国内高端冰淇淋O2O（线上到线下）品牌，通过优质食材创造好玩有趣的冰淇淋。</p>
+                  <button class="btn ban-btn" onclick="ShowDiv('MyDiv','fade')">关注我们</button>
+               </div>-->
             </div>
-            <a id="xiala" class="scroll-down"><i class="fa  fa-chevron-down"></i></a>
-         </section>
-		
-		  <!-- 品牌理念 -->
-         <section id="idea" class="cbp-so-section sec-port-main main-spacer clear-inner-space">
+            <!-- <a id="xiala" class="scroll-down"><i class="fa fa-chevron-down"></i></a> -->
+        </section>
+
+        <!-- 品牌理念 -->
+        <section id="idea" class="cbp-so-section sec-port-main main-spacer clear-inner-space">
             <div class="container-fluid sec-head-main text-center">
-               <div class="sec-head-each  first">
-                  <i class="fa fa-th-list"></i>
-                  <h1 class="sec-head">品牌理念 <i>|</i></h1>
-               </div>
-               <div class="sec-head-each  second">Alexander's Values</div>
+                <div class="sec-head-each first">
+                    <i class="fa fa-th-list"></i>
+                    <h1 class="sec-head">品牌理念 <i>|</i></h1>
+                </div>
+                <div class="sec-head-each second">Alexander's Values</div>
             </div>
             <div class="container-fluid">
-               <div class="container services-table">
-                  <div class="row">
-                     <div class="col-xs-6 col-md-4 col-lg-4 ">
-                        <div class="container-fluid text-center">
-                           <i class="fa fa-thumbs-o-up "></i>
-                        </div>
-                        <div class="container-fluid text-center">
-                           <h4>企业理念</h4>
-                           <p style="font-size: 15px;">每一位消费者都拥有吃到安全、放心的食品的权利。亚历山达在原材料的选购和生产过程中丝毫不敢马虎，作为您的伙伴，我们只为您提供天然、优质、健康的食品和最贴心的服务。</p>
-                        </div>
-                     </div>
-                     <div class="col-xs-6 col-md-4 col-lg-4">
-                        <div class="container-fluid text-center">
-                           <i class="fa fa-heart "></i>
-                        </div>
-                        <div class="container-fluid text-center">
-                           <h4>社会责任</h4>
-                           <p style="font-size: 15px;">企业应该承担相应的社会责任。亚历山达承诺至少捐出1%的收入和1%的时间参与到公益活动中。同时也关注员工的工作环境，并选用绿色环保的包材及低碳出行的配送方式。</p>
-                        </div>
-                     </div>
-                     <div class="col-xs-6 col-md-4 col-lg-4">
-                        <div class="container-fluid text-center">
-                           <i class="fa fa-star-o"></i>
-                        </div>
-                        <div class="container-fluid text-center">
-                           <h4>食品质量</h4>
-                           <p style="font-size: 15px;">绝不添加任何人造香精、人造色素等添加剂。亚历山达冰淇淋的味道、颜色都是由天然的原料直接得来。我们选用的乳化剂和增稠剂皆是由国际领先供应商提供的，食品安全永远是最重要的。</p>
-                        </div>
-                     </div>
+                <div class="container services-table">
+                    <div class="row">
+                        <div class="col-xs-6 col-md-4 col-lg-4">
+                            <div class="container-fluid text-center">
+                                <i class="fa fa-thumbs-o-up "></i>
+                            </div>
+                            <div class="container-fluid text-center">
+                                <h4>企业理念</h4>
+                                <p style="font-size: 14px;">每一位消费者都拥有吃到安全、放心的食品的权利。亚历山达在原材料的选购和生产过程中丝毫不敢马虎，作为您的伙伴，我们只为您提供天然、优质、健康的食品和最贴心的服务。</p>
+                            </div>
 
-					      <!--品牌理念 图片-->
-					      <div id="a1" class="col-xs-6 col-md-4 gallery cf">
-					      	<div class="container-fluid text-center">
-					      		<img id="alexanders1" src="images/alexanders1.jpg" title="企业理念——Alexander's" alt="企业理念——Alexander's" />
-					      	</div>
- 					      </div>
- 					      <div id="a2" class="col-xs-6 col-md-4 gallery cf">
-					      	<div class="container-fluid text-center">
-					      		<img id="alexanders2" src="images/alexanders2.jpg" title="社会责任——Alexander's" alt="社会责任——Alexander's" />
-					      	</div>
- 					      </div>
-					      <div id="a3" class="col-xs-6 col-md-4 gallery cf">
-					      	<div class="container-fluid text-center">
-					      		<img id="alexanders3" src="images/alexanders3.jpg" title="食品质量与安全——Alexander's" alt="食品质量与安全——Alexander's" />
-					      	</div>
-					      </div>
-				      </div>
+                            <div id="a1"><!--  gallery cf -->
+                                <div class="container-fluid text-center">
+                                    <img id="alexanders1" class="img-width" src="images/alexanders1.jpg" title="企业理念——Alexander's" alt="企业理念——Alexander's" />
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xs-6 col-md-4 col-lg-4">
+                            <div class="container-fluid text-center">
+                                <i class="fa fa-heart-o "></i>
+                            </div>
+                            <div class="container-fluid text-center">
+                                <h4>社会责任</h4>
+                                <p style="font-size: 14px;">企业应该承担相应的社会责任。亚历山达承诺至少捐出1%的收入和1%的时间参与到公益活动中。同时也关注员工的工作环境，并选用绿色环保的包材及低碳出行的配送方式。</p>
+                            </div>
 
-               </div>
+                            <div id="a2"><!--  gallery cf -->
+                                <div class="container-fluid text-center">
+                                    <img id="alexanders2" class="img-width" src="images/alexanders2.jpg" title="社会责任——Alexander's" alt="社会责任——Alexander's" />
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xs-6 col-md-4 col-lg-4">
+                            <div class="container-fluid text-center">
+                                <i class="fa fa-star-o"></i>
+                            </div>
+                            <div class="container-fluid text-center">
+                                <h4>食品质量</h4>
+                                <p style="font-size: 14px;">绝不添加任何人造香精、人造色素等添加剂。亚历山达冰淇淋的味道、颜色都是由天然的原料直接得来。我们选用的乳化剂和增稠剂皆是由国际领先供应商提供的，食品安全永远是最重要的。</p>
+                            </div>
+
+                            <div id="a3"><!--  gallery cf -->
+                                <div class="container-fluid text-center">
+                                    <img id="alexanders3" class="img-width" src="images/alexanders3.jpg" title="食品质量与安全——Alexander's" alt="食品质量与安全——Alexander's" />
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
-         </section>
-         <!--================================================模块分界线==================================================-->
-         <!-- 品牌故事 -->
-         <section id="story" class="cbp-so-section sec-port-main main-spacer story-sec clear-inner-space">
+        </section>
+        <!--================================================模块分界线==================================================-->
+        <!-- 品牌故事 -->
+        <section id="story" class="cbp-so-section sec-port-main main-spacer story-sec clear-inner-space">
             <div class="container-fluid sec-head-main text-center">
-               <div class="sec-head-each  first">
-                  <i class="fa fa-book"></i>
-                  <h1 class="sec-head">品牌故事 <i>|</i></h1>
-               </div>
-               <div class="sec-head-each second">About us</div>
+                <div class="sec-head-each first">
+                    <i class="fa fa-book"></i>
+                    <h1 class="sec-head">品牌故事 <i>|</i></h1>
+                </div>
+                <div class="sec-head-each second">About us</div>
             </div>
 
             <div class="container-fluid story-items-main">
-               <div class="row story-items-main story-items-main-block">
+                <div class="row story-items-main story-items-main-block">
 
-               <ul class="showMoreNChildren" pagesize="5" style="list-style:none;margin:0 -18px;width:100%;">
-                 <li>
-                  <div class="cbp-so-side col-lg-6 cbp-so-from-left story_margin">
-                     <div class="row">
-                        <div class=" col-xs-12 col-lg-4 img-wrap-main">
-                           <img alt="Alexander's从冰淇淋到冰淇淋文化" title="Alexander's从冰淇淋到冰淇淋文化" class="img-responsive" src="images/story_1.jpg"/>
+                    <div class="cbp-so-side col-lg-6 cbp-so-from-left story_margin">
+                        <div class="row">
+                            <div class="col-xs-12 col-lg-4 img-wrap-main">
+                                <img alt="Alexander's从冰淇淋到冰淇淋文化" title="Alexander's从冰淇淋到冰淇淋文化" class="img-responsive" src="images/story_1.jpg"/>
+                            </div>
+                            <div class="col-lg-8 port-desc-wrap">
+                                <h3>从冰淇淋到冰淇淋文化</h3>
+                                <p>
+                                    中国年轻一代的创业家们都有着相似的无畏与雄心，将世界对“中国制造”的观念转变为“中国质造”。他们继承了老一辈创业家们的责任感，但却又比他们更具“野心”————投入所有努力创造出更好的事物。...
+                                </p>
+                                <button id="one" class="btn ban-btn">了解更多</button>
+                            </div>
                         </div>
-                        <div class="col-lg-8 port-desc-wrap">
-                           <h3>从冰淇淋到冰淇淋文化</h3>
-                           <p>
-                              中国年轻一代的创业家们都有着相似的无畏与雄心，将世界对“中国制造”的观念转变为“中国质造”。他们继承了老一辈创业家们的责任感，但却又比他们更具“野心”————投入所有努力创造出更好的事物。...
-                           </p>
-                           <button id="one" class="btn ban-btn">了解更多</button>
-                        </div>
-                     </div>
-                  </div></li>
+                    </div>
 
-                  <li>
-                  <div class="cbp-so-side col-lg-6 container-fluid cbp-so-from-right story_margin">
-                     <div class="row">
-                        <div class="col-xs-12 col-lg-4 img-wrap-main">
-                           <img alt="老雪糕厂的少东家和他的冰淇淋革命" title="老雪糕厂的少东家和他的冰淇淋革命" class="img-responsive" src="images/story_2.jpg"/>
+                    <div class="cbp-so-side col-lg-6 container-fluid cbp-so-from-right story_margin">
+                        <div class="row">
+                            <div class="col-xs-12 col-lg-4 img-wrap-main">
+                                <img alt="老雪糕厂的少东家和他的冰淇淋革命" title="老雪糕厂的少东家和他的冰淇淋革命"  class="img-responsive" src="images/story_2.jpg"/>
+                            </div>
+                            <div class="col-lg-8 port-desc-wrap">
+                                <h3>故事 | 老雪糕厂的少东家和他的冰淇淋革命</h3>
+                                <p>
+                                    当有一天，Alex在车上对父亲说他要做冰淇淋品牌时，父亲沉默了一会儿，只问了一句：“你是有多走投无路？”...
+                                </p>
+                                <button id="two" class="btn ban-btn">了解更多</button>
+                            </div>
                         </div>
-                        <div class="col-lg-8 port-desc-wrap">
-                           <h3>故事 | 老雪糕厂的少东家和他的冰淇淋革命</h3>
-                           <p>
-                               当有一天，Alex在车上对父亲说他要做冰淇淋品牌时，父亲沉默了一会儿，只问了一句：“你是有多走投无路？”...
-                           </p>
-                           <button id="two" class="btn ban-btn">了解更多</button>
-                        </div>
-                     </div>
-                  </div></li>
+                    </div>
 
-                  <li>
-                  <div class="cbp-so-side col-lg-6 container-fluid cbp-so-from-left story_margin">
-                     <div class="row">
-                        <div class="col-xs-12 col-lg-4 img-wrap-main">
-                           <img alt="CEO Alex在上海一席的分享" title="CEO Alex在上海一席的分享" class="img-responsive" src="images/story_3.jpg"/>
+                    <div class="cbp-so-side col-lg-6 container-fluid cbp-so-from-left story_margin">
+                        <div class="row">
+                            <div class="col-xs-12 col-lg-4 img-wrap-main">
+                                <img alt="CEO Alex在上海一席的分享" title="CEO Alex在上海一席的分享" class="img-responsive" src="images/story_3.jpg"/>
+                            </div>
+                            <div class="col-lg-8 port-desc-wrap">
+                                <h3>傲娇的冰淇淋 | 一席第358位讲者王海达</h3>
+                                <p>
+                                    因为真的有人用心在做这个产品，所以我期望我们Alexander's可以慢慢地将更好的一些产品用心、用最传统的办法把它生产跟制造出来。...
+                                </p>
+                                <button id="three" class="btn ban-btn">了解更多</button>
+                            </div>
                         </div>
-                        <div class="col-lg-8 port-desc-wrap">
-                           <h3>傲娇的冰淇淋 | 一席第358位讲者王海达</h3>
-                           <p>
-                               现在大家都知道蛋糕可以送货上门。烘焙技术在过去10年里面改变过吗？并没有。那为什么我们现在愿意花一两百、两三百去买更好吃的蛋糕呢？因为真的有人用心在做这个产品，所以我期望我们Alexander's可以慢慢地将更好的一些产品用心、用最传统的办法把它生产跟制造出来。...
-                           </p>
-                           <button id="three" class="btn ban-btn">了解更多</button>
-                        </div>
-                     </div>
-                  </div></li>
+                    </div>
 
-                  <li>
-                  <div class="cbp-so-side col-lg-6 container-fluid cbp-so-from-right story_margin">
-                     <div class="row">
-                        <div class="col-xs-12 col-lg-4 img-wrap-main">
-                           <img alt="Alexander's抹茶冰淇淋" title="Alexander's抹茶冰淇淋" class="img-responsive" src="images/story_4.jpg"/>
+                    <div class="cbp-so-side col-lg-6 container-fluid cbp-so-from-right story_margin">
+                        <div class="row">
+                            <div class="col-xs-12 col-lg-4 img-wrap-main">
+                                <img alt="亚历山达2016宣传片" title="亚历山达2016宣传片" class="img-responsive" src="images/story_6.jpg"/>
+                            </div>
+                            <div class="col-lg-8 port-desc-wrap">
+                                <h3>深圳质造∣亚历山达2016宣传片</h3>
+                                <p>
+                                    ALEXANDER'S想做的并不只是一杯简简单单的冰淇淋，我们更希望为您带来一种全新的生活方式与生活态度。分享您生活中的点点滴滴:无论春夏与秋冬，无论天南或地北，无论欢笑亦悲伤。...
+                                </p>
+                                <button id="six" class="btn ban-btn">了解更多</button>
+                            </div>
                         </div>
-                        <div class="col-lg-8 port-desc-wrap">
-                           <h3>冰淇淋 | 顶级抹茶冰淇淋，来自北川半兵卫的诚意</h3>
-                           <p>
-                              日本对抹茶的品质有严格的品测和分级标准，等级越高的抹茶其颜色更绿，涩味更淡，粉末更细，香味更浓。ALEXANDER'S使用级别较高的后者作为主料，色绿，涩轻、粉细、香浓。既是这优质的原料，品尝时自然应当更加用心，才不至于负了这种美好。...
-                           </p>
-                           <button id="four" class="btn ban-btn">了解更多</button>
-                        </div>
-                     </div>
-                  </div></li>
-
-                  <li>
-                  <div class="cbp-so-side col-lg-6 container-fluid cbp-so-from-left story_margin">
-                     <div class="row">
-                        <div class="col-xs-12 col-lg-4 img-wrap-main">
-                           <img alt="Alexander's首款小黑杯低热量冰淇淋——柠檬酸奶冰淇淋" title="Alexander's首款小黑杯低热量冰淇淋——柠檬酸奶冰淇淋" class="img-responsive" src="images/story_5.jpg"/>
-                        </div>
-                        <div class="col-lg-8 port-desc-wrap">
-                           <h3>冰淇淋丨吃不胖系列,首款小黑杯低热量冰淇淋</h3>
-                           <p>
-                               既想要马甲线也想吃甜食？超低热量的吃不胖系列可以让健身人士们也能够放心吃雪糕。满足keep fit人士的需求。...
-                           </p>
-                           <button id="five" class="btn ban-btn">了解更多</button>
-                        </div>
-                     </div>
-                  </div></li>
-
-                  <!--=========================点击展现更多============================-->
-                  <li>
-                  <div class="cbp-so-side col-lg-6 container-fluid cbp-so-from-right story_margin">
-                     <div class="row">
-                        <div class=" col-xs-12 col-lg-4 img-wrap-main">
-                           <img alt="亚历山达2016宣传片" title="亚历山达2016宣传片" class="img-responsive" src="images/story_6.jpg"/>
-                        </div>
-                        <div class="col-lg-8 port-desc-wrap">
-                           <h3>深圳质造∣亚历山达2016宣传片</h3>
-                           <p>
-                              ALEXANDER'S想做的并不只是一杯简简单单的冰淇淋，我们更希望为您带来一种全新的生活方式与生活态度。分享您生活中的点点滴滴:无论春夏与秋冬，无论天南或地北，无论欢笑亦悲伤。...
-                           </p>
-                           <button id="six" class="btn ban-btn">了解更多</button>
-                        </div>
-                     </div>
-                  </div></li>
-
-                  <li>
-                  <div class="cbp-so-side col-lg-6 container-fluid cbp-so-from-left story_margin">
-                     <div class="row">
-                        <div class="col-xs-12 col-lg-4 img-wrap-main">
-                           <img alt="Alexander's超级解腻还吃不胖的水果冰棒" title="Alexander's超级解腻还吃不胖的水果冰棒"  class="img-responsive" src="images/story_7.jpg"/>
-                        </div>
-                        <div class="col-lg-8 port-desc-wrap">
-                           <h3>冰棒丨超级解腻还吃不胖的水果冰棒</h3>
-                           <p>
-                               我们甚至能够直接看到冻在冰棒内的百香果籽。百香果籽可直接吞下，丝毫不影响身体健康。吃冰棒最佳的方式是直接咬上一大口，而冰冻过的百香果籽口感变得特别脆，让冰棒的口感更独特。...
-                           </p>
-                           <button id="seven" class="btn ban-btn">了解更多</button>
-                        </div>
-                     </div>
-                  </div></li>
-
-                  <li>
-                  <div class="cbp-so-side col-lg-6 container-fluid cbp-so-from-right story_margin">
-                     <div class="row">
-                        <div class="col-xs-12 col-lg-4 img-wrap-main">
-                           <img alt="Alexander's彩蛋杯——柑曼怡巧克力味冰淇淋" title="Alexander's彩蛋杯——柑曼怡巧克力味冰淇淋" class="img-responsive" src="images/story_8.jpg"/>
-                        </div>
-                        <div class="col-lg-8 port-desc-wrap">
-                           <h3>彩蛋杯 | 时髦girl都爱柑曼怡巧克力</h3>
-                           <p>
-                               灵感来源于酒心巧克力，这种咬了一口巧克力在口腔中却有酒液爆发迸溅出的震惊茫然感，以及紧接着的巧克力和酒液和谐交融后产生的丰富口感，简直太难忘怀。...
-                           </p>
-                           <button id="eight" class="btn ban-btn">了解更多</button>
-                        </div>
-                     </div>
-                  </div></li>
-
-                  <li>
-                  <div class="cbp-so-side col-lg-6 container-fluid cbp-so-from-left story_margin">
-                     <div class="row">
-                        <div class="col-xs-12 col-lg-4 img-wrap-main">
-                           <img alt="Alexander's压力怪兽" title="Alexander's压力怪兽" class="img-responsive" src="images/story_9.jpg"/>
-                        </div>
-                        <div class="col-lg-8 port-desc-wrap">
-                           <h3>压力怪兽 | 亚历山达的萌代表</h3>
-                           <p>
-                              环绕身边的压力化作4只怪兽，躲匿于各个角落中。无论是在办公室、餐厅、购物中心等场合都能够碰到这些让你压力山大的怪兽们。月光怪：常出现于月末；加班怪：凌晨两点的办公室必出现；...
-                           </p>
-                           <button id="nine" class="btn ban-btn">了解更多</button>
-                        </div>
-                     </div>
-                  </div></li>
-
-                  <li>
-                  <div class="cbp-so-side col-lg-6 container-fluid cbp-so-from-right story_margin">
-                     <div class="row">
-                        <div class="col-xs-12 col-lg-4 img-wrap-main">
-                           <img alt="亚历山达是个好玩又有故事的冰淇淋品牌" title="亚历山达是个好玩又有故事的冰淇淋品牌" class="img-responsive" src="images/story_10.jpg"/>
-                        </div>
-                        <div class="col-lg-8 port-desc-wrap">
-                           <h3>品牌介绍丨亚历山达是个好玩又有故事的冰淇淋品牌</h3>
-                           <p>
-                               其实我们是做冰淇淋的，做活动好玩我觉得还不是最重要的，我们要把冰淇淋这个东西做得特别好玩。...
-                           </p>
-                           <button id="ten" class="btn ban-btn">了解更多</button>
-                        </div>
-                     </div>
-                  </div></li>
-                 <!--===============================================================-->
-                  <div class="container-fluid pull-left" >
-                     <button id="more" class="btn big-btn showMorehandle" style="white-space:normal;">点击查看更多</button>
-                  </div>
-               </ul>
-               </div>
+                    </div>
+                    <!--===============================================================-->
+                    <div class="container-fluid" style="text-align: center;">
+                        <button id="more" class="btn big-btn" style="white-space: normal;">点击这里了解更多</button>
+                    </div>
+                </div>
             </div>
-         </section>
-      <!--================================================模块分界线==================================================-->
-		   <!-- 线下体验 -->
-         <section id="store" class="cbp-so-section abt-main">
+        </section>
+        <!--================================================模块分界线==================================================-->
+        <!-- 线上购买-->
+        <section id="online" class="cbp-so-section abt-main abt-testimonial" style="min-height: 200px;">
+            <div class="container-fluid ab">
+                <div class="testimonial-block text-center" style="width: 100%;">
+                    <div class="container-fluid sec-head-main text-center from-top">
+                        <div class="sec-head-each first">
+                            <i class="icon-briefcase fa fa-shopping-cart"></i>
+                            <h1 class="sec-head">天猫商城 <i>|</i></h1>
+                        </div>
+                        <div class="sec-head-each second">Welcome to Tmall</div>
+                    </div>
+                    <div class="row text-center">
+                        <div class="col-lg-12">
+                            <div class="container-fluid">
+                                <a id="tmall" href="https://alexanders.tmall.com/index.htm" target="_blank" style="cursor:pointer;">
+                                    <img alt="Alexander's 天猫商城首页" title="Alexander's 天猫商城首页" class="img-responsive" src="images/tmall.jpg">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section><!-- 线上购买 end -->
+
+        <!-- 购买指引-->
+        <section id="help" class="cbp-so-section abt-main abt-testimonial">
+            <div class="container-fluid ab">
+                <div class="testimonial-block text-center" style="width: 80%;">
+                    <div class="container-fluid sec-head-main text-center from-top">
+                        <div class="sec-head-each first">
+                            <i class="icon-briefcase fa fa-weixin"></i>
+                            <h1 class="sec-head">微信商城 <i>|</i></h1>
+                        </div>
+                        <div class="sec-head-each second">How to Purchase</div>
+                    </div>
+
+                    <div class="row text-center">
+
+                        <div class=" container-fluid">
+                            <div id="carousel-example-generic" class="carousel fade-in" data-ride="carousel">
+                                <!-- 部分一，修改 -->
+                                <div class="carousel-inner">
+
+                                    <div class="col-xs-2 col-lg-3 test-left-main help-size">
+                                        <a class="fancybox" href="images/1_b.jpg" data-fancybox-group="gallery" title="Alexander's亚历山达冰淇淋——步骤一"><img class="img-responsive" src="images/1_s.jpg" alt="亚历山达——步骤1" /></a>
+                                    </div>
+                                    <div class="col-xs-2 col-lg-3 test-left-main help-size">
+                                        <a class="fancybox" href="images/2_b.jpg" data-fancybox-group="gallery" title="Alexander's亚历山达冰淇淋——步骤二"><img class="img-responsive" src="images/2_s.jpg" alt="亚历山达——步骤2" /></a>
+                                    </div>
+                                    <div class="col-xs-2 col-lg-3 test-left-main help-size">
+                                        <a class="fancybox" href="images/3_b.jpg" data-fancybox-group="gallery" title="Alexander's亚历山达冰淇淋——步骤三"><img class="img-responsive" src="images/3_s.jpg" alt="亚历山达——步骤3" /></a>
+                                    </div>
+                                    <div class="col-xs-2 col-lg-3 test-left-main help-size">
+                                        <a class="fancybox" href="images/4_b.jpg" data-fancybox-group="gallery" title="Alexander's亚历山达冰淇淋——步骤四"><img class="img-responsive" src="images/4_s.jpg" alt="亚历山达——步骤4" /></a>
+                                    </div>
+                                    <div class="col-xs-2 col-lg-3 test-left-main help-size">
+                                        <a class="fancybox" href="images/5_b.jpg" data-fancybox-group="gallery" title="Alexander's亚历山达冰淇淋——步骤五"><img class="img-responsive" src="images/5_s.jpg" alt="亚历山达——步骤5" /></a>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-12 col-md-12 col-xs-12" style="margin: 30px 0;">
+                        <p style="font-size: 14px;">用户也可点击下方按钮直接选购&nbsp;&nbsp;<i class="fa fa-angle-double-down"></i></p>
+                        <div class="cntct-form-main">
+                            <p><button id="shopPc" class="btn ban-btn" style="">点我进入选购</button></p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section><!-- 购买指引 end -->
+
+        <!--================================================模块分界线==================================================-->
+        <!-- 线下体验 -->
+        <section id="store" class="cbp-so-section abt-main">
             <div class="container-fluid sec-head-main text-center from-top">
-               <div class="sec-head-each  first">
-                  <i class="fa fa-arrow-down"></i>
-                  <h1 class="sec-head">线下体验 <i>|</i></h1>
-               </div>
-               <div class="sec-head-each second">Find us</div>
+                <div class="sec-head-each first">
+                    <i class="fa fa-arrow-down"></i>
+                    <h1 class="sec-head">线下体验 <i>|</i></h1>
+                </div>
+                <div class="sec-head-each second">Find us</div>
             </div>
 
             <div class="row abt-item-block text-center">
-               <div><p>点击下方图片查看我们的线下合作商家~</p></div>
-			      <div style="height:5px;width:100%;" name="zhanyong"></div>
-
-               <div class="col-lg-3 l-left">
-                  <div class="container-fluid abt-item">
-                     <div class="container-fluid img-base">
-                        <a id="sz" target="_blank" style="cursor:pointer;"><img alt="Alexander's 深圳线下体验店" title="Alexander's 深圳线下体验店"  class="img-responsive" src="images/sz.jpg"/></a>
-                     </div>
-                  </div>
-               </div>
-
-               <div class="col-lg-3 l-left">
-                  <div class="container-fluid abt-item">
-                     <div class="container-fluid img-base">
-                        <a id="gz" target="_blank" style="cursor:pointer;"><img alt="Alexander's 广州线下体验店" title="Alexander's 广州线下体验店" class="img-responsive" src="images/gz.jpg"/></a>
-                     </div>
-                  </div>
-               </div>
-
-               <div class="col-lg-3 l-left">
-                  <div class="container-fluid abt-item">
-                     <div class="container-fluid img-base">
-                        <a id="cd" target="_blank" style="cursor:pointer;"><img alt="Alexander's 成都线下体验店" title="Alexander's 成都线下体验店" class="img-responsive" src="images/cd.jpg"/></a>
-                     </div>
-                  </div>
-               </div>
-			   
-			   <br/>
-               <div class="container-fluid"><p>还有哪些地方你想看到我们的冰淇淋？<a id="lianxi" style="cursor:pointer;">联系我们</a>，商务冲锋队会拼了命的帮你搞定！公司食堂、电影院、网咖、酒店、餐厅、咖啡厅、会所......</p></div>
-            </div>
-         </section> <!-- 线下体验 end -->
-
-		   <!-- 购买途径 -->
-         <section id="help" class="cbp-so-section abt-main abt-testimonial">
-            <div class="container-fluid ab">
-               <div class="testimonial-block text-center">
-                  <div class="container-fluid sec-head-main text-center from-top">
-                     <div class="sec-head-each first">
-                        <i class="icon-briefcase fa fa-hand-o-down"></i>
-                        <h1 class="sec-head">购买指引 <i>|</i></h1>
-                     </div>
-                     <div class="sec-head-each  second">How to Purchase</div>
-                  </div>
-                  <div class="container-fluid">
-                     <div id="carousel-example-generic" class="carousel fade-in" data-ride="carousel">
-                        <!-- 部分一 导购指引-->
-                        <div class="carousel-inner">
-                         
-                           <div class="col-xs-2 col-lg-3 test-left-main help-size">
-                           		<a class="fancybox" href="images/1_b.jpg" data-fancybox-group="gallery" title="Alexander's亚历山达冰淇淋——步骤一"><img class="img-responsive" src="images/1_s.jpg" alt="亚历山达——步骤1" /></a>
-                           </div>
-                           <div class="col-xs-2 col-lg-3 test-left-main help-size">
-                           		<a class="fancybox" href="images/2_b.jpg" data-fancybox-group="gallery" title="Alexander's亚历山达冰淇淋——步骤二"><img class="img-responsive" src="images/2_s.jpg" alt="亚历山达——步骤2" /></a>
-                           </div>
-                           <div class="col-xs-2 col-lg-3 test-left-main help-size">
-                           		<a class="fancybox" href="images/3_b.jpg" data-fancybox-group="gallery" title="Alexander's亚历山达冰淇淋——步骤三"><img class="img-responsive" src="images/3_s.jpg" alt="亚历山达——步骤3" /></a>
-                           </div>
-                           <div class="col-xs-2 col-lg-3 test-left-main help-size">
-                           		<a class="fancybox" href="images/4_b.jpg" data-fancybox-group="gallery" title="Alexander's亚历山达冰淇淋——步骤四"><img class="img-responsive" src="images/4_s.jpg" alt="亚历山达——步骤4" /></a>
-                           </div>
-                           <div class="col-xs-2 col-lg-3 test-left-main help-size">
-                           		<a class="fancybox" href="images/5_b.jpg" data-fancybox-group="gallery" title="Alexander's亚历山达冰淇淋——步骤五"><img class="img-responsive" src="images/5_s.jpg" alt="亚历山达——步骤5" /></a>
-                           </div>
-
+                <div class="col-lg-3 l-left">
+                    <div class="container-fluid abt-item">
+                        <div class="container-fluid img-base">
+                            <a id="sz" target="_blank" onclick="jumpMap('1');" style="cursor:pointer;"><img alt="Alexander's 深圳线下体验店" title="Alexander's 深圳线下体验店"  class="img-responsive" src="images/sz.jpg"/></a>
                         </div>
-                     </div>
-                  </div>
-               </div>
-            </div>
-         </section><!-- 购买途径 end -->
+                    </div>
+                </div>
 
-         <!-- 企业试吃 -->
-         <section id="company" class="cbp-so-section abt-main">
+                <div class="col-lg-3 l-left">
+                    <div class=" container-fluid abt-item">
+                        <div class="container-fluid img-base">
+                            <a id="gz" target="_blank" onclick="jumpMap('2');" style="cursor:pointer;"><img alt="Alexander's 广州线下体验店" title="Alexander's 广州线下体验店" class="img-responsive" src="images/gz.jpg"/></a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 l-left">
+                    <div class=" container-fluid abt-item">
+                        <div class="container-fluid img-base">
+                            <a id="cd" target="_blank" onclick="jumpMap('8');" style="cursor:pointer;"><img  alt="Alexander's 成都线下体验店" title="Alexander's 成都线下体验店" class="img-responsive" src="images/cd.jpg"/></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 l-left">
+                    <div class=" container-fluid abt-item">
+                        <div class="container-fluid img-base">
+                            <a id="sh" target="_blank" onclick="jumpMap('12');" style="cursor:pointer;"><img alt="Alexander's 上海线下体验店" title="Alexander's 上海线下体验店" class="img-responsive" src="images/sh.jpg"/></a>
+                        </div>
+                    </div>
+                </div>
+                <br/>
+                <div class="container-fluid" style="width: 90%;"><p>还有哪些地方你想看到我们的冰淇淋？<a id="lianxi" style="cursor:pointer;">联系我们</a>，商务冲锋队会拼了命的帮你搞定！</p></div>
+            </div>
+        </section> <!-- 线下体验 end -->
+
+        <!-- 企业试吃 -->
+        <!-- <section id="company" class="cbp-so-section abt-main">
             <div class="container-fluid sec-head-main text-center from-top">
-               <div class="sec-head-each  first">
-                  <i class="icon-briefcase fa  fa-smile-o"></i>
-                  <h1 class="sec-head">企业试吃 <i>|</i></h1>
-               </div>
-               <div class="sec-head-each second">Alexander's and Business</div>
+                <div class="sec-head-each first">
+                    <i class="icon-briefcase fa fa-smile-o"></i>
+                    <h1 class="sec-head">企业试吃 <i>|</i></h1>
+                </div>
+                <div class="sec-head-each second">Alexander's and Business</div>
             </div>
-            <div class="container-fluid cntct-form-main" style="margin-bottom:14px;">
-               <div class="row inner-content">
-                  <div class="container-fluid"><p style="margin:0 15px 32px;">嘿，亲~还在为公司的下午茶策划所苦恼吗？将味道、颜色都是由天然的原料直接得来的<span style="font-weight:bold;">亚历山达冰淇淋</span>与大家一起分享......棒棒哒！</p></div>
+            <div class="col-lg-12 col-md-12 col-xs-12 text-center">
+                <div class="col-lg-6 col-md-6 col-xs-6" style="text-align: right;">
+                    <p style="font-size: 14px;">移动端客户，可扫一扫下方二维码进行申请&nbsp;&nbsp;<i class="fa fa-angle-double-down"></i></p>
+                    <p>
+                        <img alt="Alexander's 企业试吃二维码" title="Alexander's 企业试吃二维码" class="img-responsive two-code" src="images/company_eat.png" style="max-width:60%;display: initial;" />
+                    </p>
+                </div>
 
-                  <div class="col-lg-6 col-md-6 col-xs-6 about-right">
-                     <div role="form" class=" container-fluid">
-                        <p style="font-size: 14px;">移动端客户，可扫一扫下方二维码进行申请&nbsp;&nbsp;<i class="icon-briefcase fa  fa-level-down"></i></p>
-                        <p><img alt="Alexander's 企业试吃二维码" title="Alexander's 企业试吃二维码" class="img-responsive two-code" src="images/company_eat.png" style="max-width:30%;" /></p>
-                     </div>
-                  </div>
-
-                  <div class="col-lg-6 col-md-6 col-xs-6 about-right">
-                     <div class="container-fluid">  
-                        <div class="container-fluid comp-short-desc ">
-                           <div class="container-fluid">
-                              <div class="container-fluid">
-                                 <p style="font-size: 14px;">PC端客户，可点击下方按钮进行申请&nbsp;&nbsp;<i class="icon-briefcase fa  fa-level-down"></i></p>
-                                 <p><button id="company_eat" class="btn ban-btn">企业试吃申请</button></p>
-                              </div>
-                        </div>
-                     </div>
-                  </div>
-               </div>
+                <div class="col-lg-6 col-md-6 col-xs-6" style="text-align: left;">
+                    <p style="font-size: 14px;">PC端客户，可点击下方按钮进行申请&nbsp;&nbsp;<i class="fa fa-angle-double-down"></i></p>
+                    <div class="cntct-form-main">
+                        <p><button id="company_eat" class="btn ban-btn" style="">企业试吃申请</button></p>
+                    </div>
+                </div>
             </div>
-         </div>
-         </section><!-- 企业试吃 end -->
-         <!--================================================模块分界线==================================================-->
-         <!-- 联系我们 -->
-         <section id="contact" class="cbp-so-section cntct-sec-main">
+        </section> --><!-- 企业试吃 end -->
+        <!--================================================模块分界线==================================================-->
+        <!-- 联系我们 -->
+        <section id="contact" class="cbp-so-section cntct-sec-main">
             <div class="container-fluid sec-head-main text-center">
-               <div class="sec-head-each  first">
-                  <i class="fa fa-comments-o"></i>
-                  <h1 class="sec-head">联系我们 <i>|</i></h1>
-               </div>
-               <div class="sec-head-each  second">Let's Talk</div>
+                <div class="sec-head-each first">
+                    <i class="fa fa-comments-o"></i>
+                    <h1 class="sec-head">联系我们 <i>|</i></h1>
+                </div>
+                <div class="sec-head-each second">Let's Talk</div>
             </div>
             <div class="container-fluid row cnt-sub-head">
-               <div class="col-lg-12 cont-desc">
-                  <h3>我们时刻准备着</h3>
-                  <p>
-                     如果您有什么疑问或者好的想法以及对我们服务的建议，都可以通过下方联系方式联系我们。We need you!
-                  </p>
-               </div>
+                <div class="col-lg-12 cont-desc">
+                    <h3>我们时刻准备着</h3>
+                    <p>如果您有什么疑问或者好的想法以及对我们服务的建议，都可以通过下方联系方式联系我们。We need you!</p>
+                </div>
             </div>
             <div class="container-fluid cntct-form-main">
-               <div class="row inner-content">
-                  <div class="col-lg-6 col-md-6 col-xs-6 about-right">
-                     <div role="form" class="container-fluid">
-						      <p style="font-size: 14px;">Alexander's（亚历山达）是深圳的高端O2O(线上到线下)冰淇淋品牌，甄选来自法国、新西兰、马来西亚等世界各地顶级原材料，以先进的工艺为您提供美味、优质的冰淇淋。</p>
-						      <p style="font-size: 14px;">客户可以通过微信平台、淘宝等渠道购买，现可将冰淇淋配送至深圳、广州、成都、南宁、惠州。</p>
-						      <p style="font-size: 14px;">想调戏客服？快来添加↓</p>
-						      <p>客服微信号（深圳）: icalexsz 、客服微信号（广州）: icalexgz 、客服微信号（成都）: icalexcd</p>
-                     </div>
-                  </div>
-                  <div class="col-lg-6 col-md-6 col-xs-6 about-right">
-                     <div class="container-fluid">  
-                        <div class="container-fluid  top-space comp-short-desc ">
-                           <!-- <div class="container-fluid">
-                              <a href="http://j.map.baidu.com/atm8F" target="_blank" style="color:#fff;"><i class="fa fa-map-marker"></i>深圳市福田区泰然九路盛唐大厦西座2301</a>
-                           </div> -->
-                              <div class="container-fluid">
-                                 <i class="fa fa-envelope"></i>service@alexanders.cn
-                              </div>
-                              <div class="container-fluid">
-                                 <i class="fa fa-mobile"></i>18565602650
-                              </div>
-                              <div class="container-fluid">
-                                 <i class="fa fa-phone"></i>400-990-8355
-                              </div>
-                        </div>
-                     </div>
-                  </div>
-               </div>
+                <div style="text-align: left;font-size: 14px;">
+                    <div class="col-lg-12 col-md-12 col-xs-12 text-center" style="line-height: 2;">
+                        <i class="fa fa-weixin"></i>&nbsp;&nbsp;icalexsz (深圳)
+                    </div>
+                    <div class="col-lg-12 col-md-12 col-xs-12 text-center" style="line-height: 2;">
+                        <i class="fa fa-weixin"></i>&nbsp;&nbsp;icalexgz (广州)
+                    </div>
+                    <div class="col-lg-12 col-md-12 col-xs-12 text-center" style="line-height: 2;">
+                        <i class="fa fa-weixin"></i>&nbsp;&nbsp;icalexcd (成都)
+                    </div>
+                    <div class="col-lg-12 col-md-12 col-xs-12 text-center" style="line-height: 2;">
+                        <i class="fa fa-envelope"></i>&nbsp;&nbsp;service@alexanders.cn
+                    </div>
+                    <div class="col-lg-12 col-md-12 col-xs-12 text-center" style="line-height: 2;">
+                        <i class="fa fa-tablet"></i>&nbsp;&nbsp;18565602650
+                    </div>
+                    <div class="col-lg-12 col-md-12 col-xs-12 text-center" style="line-height: 2;">
+                        <i class="fa fa-phone"></i>&nbsp;&nbsp;400-990-8355
+                    </div>
+                </div>
             </div>
-         </section>
-         <!--================================================模块分界线==================================================-->
-         <!-- footer -->
-         <footer class="container-fluid">
+        </section>
+        <!--================================================模块分界线==================================================-->
+        <!-- footer -->
+        <footer class="container-fluid">
             <div class="inner-content">
-               <div class="container-fluid">
-                  <h2 class="text-center">关注下方,了解最新动态资讯。</h2>
-               </div>
-               <div class="container-fluid text-center">
-                  <ul class="social-medias list-inline">
-                     <li class="wechat">
-                        <a id="wechat" href="wechat.html" target="_blank"><i class="fa fa-weixin"></i>微信</a>
-                     </li>
-                     <li class="weibo">
-                        <a id="weibo" target="_blank" style="cursor:pointer;"><i class="fa fa-weibo"></i>微博</a>
-                     </li>
-                     <li class="twitter">
-                        <a id="twitter" target="_blank" style="cursor:pointer;"><i class="fa fa-twitter"></i>Twitter</a>
-                     </li>
-                     <li class="facebook">
-                        <a id="facebook" target="_blank" style="cursor:pointer;"><i class="fa fa-facebook"></i>Facebook</a>
-                     </li>                                          
-                  </ul>
-               </div>
-		 	<!-- 网站备案等 -->
-               <div class="container-fluid footer-last">
-                  <div class="row">
-                     <div class="col-lg-6 col-md-6 col-xs-4" style="width:100%;text-align:center;">
-                     	<script id="ebsgovicon" src="http://szcert.ebs.org.cn/govicon.js?id=93843401-95fe-4152-a9bd-45872a992c48&width=36&height=50&type=1" type="text/javascript" charset="utf-8"></script>
-                        <p class="copy-right"><!-- <a id="beian" target="_blank" style="cursor:pointer;"> -->粤ICP备14012601号<!-- </a> --></p>
-                     </div>
-                  </div>
-                  <div class="row">
-                     <div class="col-lg-6 col-md-6 col-xs-4" style="width:100%;text-align:center;">
-                        <p class="copy-right">Copyright © 2014-2016&nbsp;&nbsp;Shenzhen ALEXANDER'S Food Ltd.&nbsp;&nbsp;All Rights Reserved.</p>
-                     </div>
-                  </div>
-                  <div class="row">
-                     <div class="col-lg-6 col-md-6 col-xs-8" style="width:100%;">
-                        <ul class="breadcrumb">
-                           <li><a id="up-top" class="btn-link">回到顶部</a></li>
-                        </ul>
-                     </div>
-                  </div>
-               </div>
+                <div class="container-fluid">
+                    <h2 class="text-center">关注下方,了解最新动态资讯。</h2>
+                </div>
+                <div class="container-fluid text-center">
+                    <ul class="social-medias list-inline">
+                        <li class="wechat">
+                            <a id="wechat" href="<{:U('wechat')}>" target="_blank"><i class="fa fa-weixin"></i>微信</a>
+                        </li>
+                        <li class="weibo">
+                            <a id="weibo" target="_blank" style="cursor:pointer;"><i class="fa fa-weibo"></i>微博</a>
+                        </li>
+                        <li class="twitter">
+                            <a id="twitter" target="_blank" style="cursor:pointer;"><i class="fa fa-twitter"></i>Twitter</a>
+                        </li>
+                        <li class="facebook">
+                            <a id="facebook" target="_blank" style="cursor:pointer;"><i class="fa fa-facebook"></i>Facebook</a>
+                        </li>
+                    </ul>
+                </div>
+                <!-- 网站备案等 -->
+                <div class="container-fluid footer-last" >
+                    <div class="row">
+                        <div class="col-lg-6 col-md-6 col-xs-4" style="width:100%;text-align:center;">
+                            <script id="ebsgovicon" src="http://szcert.ebs.org.cn/govicon.js?id=93843401-95fe-4152-a9bd-45872a992c48&width=36&height=50&type=1" type="text/javascript" charset="utf-8"></script>
+                            <a id="beian" target="_blank" style="cursor:pointer;"><p class="copy-right">粤ICP备14012601号</p></a>
+                        </div>
+                    </div>
+                    <div class="row" style="margin-bottom: 30px;">
+                        <div class="col-lg-6 col-md-6 col-xs-4 col-xs-8" style="width:100%;text-align:center;font-size: 14px;">
+                            <p>Copyright © 2014-<script>document.write(new Date().getFullYear());</script>&nbsp;&nbsp;Shenzhen ALEXANDER'S Food Ltd.&nbsp;&nbsp;All Rights Reserved.</p>
+                        </div>
+                    </div>
+                    <a id="scrollUp" href="#intro" style="position: fixed; z-index: 2147483647;"><i class="fa fa-angle-up"></i></a>
+                </div>
             </div>
-         </footer>
-      </div>
-      <!-- Bootstrap core JavaScript
-         ================================================== -->
-      <script src="js/jquery-1.10.2.min.js"></script>
-      <script src="js/jquery-migrate-1.2.1.min.js"></script>
-      <script src="js/bootstrap.min.js"></script>
-      <script src="js/jquery.parallax-1.1.3.js" type="text/javascript"></script>
-      <script src="js/cbpScroller.js"></script>
-      <script src="js/classie.js"></script>
-      <script src="js/jquery.scrollTo.js"></script>
-      <script src="js/jquery.nav.js"></script>  
-      <script src="js/base.js"></script><!--自己编写的js文件-->    
-      <!-- Add mousewheel plugin (this is optional) -->
-      <script type="text/javascript" src="js/jquery.mousewheel-3.0.6.pack.js"></script> 
-	   <!-- Add fancyBox main JS and CSS files -->
-	   <script type="text/javascript" src="source/jquery.fancybox.js?v=2.1.3"></script> 
+        </footer>
+    </div>
+</div>
+<!--main container-->
+<!-- Bootstrap core JavaScript
+================================================== -->
+<script type="text/javascript" src="js/jquery-1.10.2.min.js"></script>
+<script type="text/javascript" src="js/jquery-migrate-1.2.1.min.js"></script>
+<script type="text/javascript" src="js/bootstrap.min.js"></script>
+<script type="text/javascript" src="js/jquery.parallax-1.1.3.js"></script>
+<script type="text/javascript" src="js/cbpScroller.js"></script>
+<script type="text/javascript" src="js/classie.js"></script>
+<script type="text/javascript" src="js/jquery.scrollTo.js"></script>
+<script type="text/javascript" src="js/jquery.nav.js"></script>
+<!--自己编写的js文件-->
+<script type="text/javascript" src="js/base.js"></script>
+<!-- Add mousewheel plugin (this is optional) -->
+<script type="text/javascript" src="js/jquery.mousewheel-3.0.6.pack.js"></script>
+<!-- Add fancyBox main JS and CSS files -->
+<script type="text/javascript" src="source/jquery.fancybox.js?v=2.1.3"></script>
 <script type="text/javascript">
-	$(document).ready(function() {
-   /*alert(window.screen.width);*/
-   /*
-    *  Simple image gallery. Uses default settings
-    */
-   $('.fancybox').fancybox({
-      scrolling :'no',
-      autoScale :'true',
-      speedIn :'800',
-      speedOut :'800',
-   });	
+    $(document).ready(function() {
+        /*
+         *  Simple image gallery. Uses default settings
+         */
+        $('.fancybox').fancybox({
+            scrolling :'no',
+            autoScale :'true',
+            speedIn :'800',
+            speedOut :'800',
+        });
 
-   $(".fancybox-effects-d").fancybox({
-      padding: 0,
-      openEffect : 'elastic',
-      openSpeed  : 150,
-      closeEffect : 'elastic',
-      closeSpeed  : 150,
-      scrolling :'no',
-      closeClick : true,
-      helpers : {
-         overlay : true
-      }
-   });					
-   /*
-    * ScrollTo idea and topbar 
-    */
-      $("#xiala").click(function(){ 
-       $.scrollTo('#idea',800); 
-      }); 
-      $("#up-top").click(function(){
-       $.scrollTo('#cbp-so-scroller',800);
-      });
-      $("#lianxi").click(function(){
-       $.scrollTo('#contact',800);
-      })
-   /*
-    * 屏幕宽小于980px（包括980px）自动换logo,否则...
-    */
-    if($(window).width()<980){
-      $("#logo").attr('src','images/logo1.png');
-    }else{
-      $("#logo").attr('src','images/logo3.png'); 
+        $(".fancybox-effects-d").fancybox({
+            padding: 0,
+
+            openEffect : 'elastic',
+            openSpeed  : 150,
+
+            closeEffect : 'elastic',
+            closeSpeed  : 150,
+            scrolling :'no',
+            closeClick : true,
+
+            helpers : {
+                overlay : true
+            }
+         });          
+         /*
+          * ScrollTo idea and topbar 
+          */
+         $("#xiala").click(function(){
+             $.scrollTo('#idea',800); 
+         });
+         $("#scrollUp").click(function(){
+            $.scrollTo('#cbp-so-scroller',1500);
+         });
+         $("#lianxi").click(function(){
+             $.scrollTo('#contact',800);
+         });
+         // 跳转至企业简介
+         $('.brandHistory').click(function(){
+             window.location.href = "<{:U('brandHistory')}>";
+         });
+        // 跳转至PC商城
+         $('#shopPc').click(function () {
+             window.location.href = "ShopPc/index?link_from=home";
+         });
+    });
+    // 跳转至商家地图
+    function jumpMap(data){
+        window.location.href = "<{:U('map')}>/id/" + data;
     }
-	});
-</script>
-</body>
+  </script>
+   </body>
 </html>
